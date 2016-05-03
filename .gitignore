@@ -1,0 +1,6 @@
+crfasrnn/
+data/
+.ipynb_checkpoints/
+img_data/
+output/
+fashion/

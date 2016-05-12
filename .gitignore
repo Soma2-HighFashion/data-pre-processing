@@ -5,3 +5,4 @@ img_data/
 output/
 fashion/
 gender_data/
+*.par

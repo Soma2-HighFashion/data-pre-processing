@@ -1,17 +1,30 @@
 ## Data Pre-processing
 
+Use SimpleCV
+
 ### Process
 
-1. Scale Image 128x128
-2. Image Segmentation - [CRF as RSS](http://www.robots.ox.ac.uk/~szheng/crfasrnndemo)
-3. Make white background
+1. [Catoon-ify Image](https://github.com/DongjunLee/TIL-MAL/blob/master/Image%20Processing/catoon-ify.md)
+2. Scale Image 128x128
+3. Data Augmentation
 
-#### Example.
+### Example.
 
-![display](images/sample.jpg "0. Sample Image")
+#### For DCGAN Training.
 
-![display](images/sample_scaled.jpg "1. Scale Image 128x128")
+![display](images/dcgan_sample.png)  
+DCGAN 모델을 Training 하기위한 이미지.
 
-![display](images/sample_segmentation.png "2. Image Segmentation")
+#### For Image Analysis.
 
-![display](images/sample_preprocessing.png "3. Make white background")
+![display](images/image_analysis_sample.png)  
+DCGAN을 통해서 생성되는 이미지.
+
+![display](https://github.com/DongjunLee/TIL-MAL/blob/master/Image%20Processing/original.png)  
+원본
+
+![display](https://github.com/DongjunLee/TIL-MAL/raw/master/Image%20Processing/Morphological.png)
+dilate -> erode  
+
+![display](https://github.com/DongjunLee/TIL-MAL/raw/master/Image%20Processing/Filter+%20Morphological.png)  
+median x 15 -> bilateral x 30 -> dilate -> erode
